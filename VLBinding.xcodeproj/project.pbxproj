@@ -9,13 +9,45 @@
 /* Begin PBXBuildFile section */
 		4A9C3D8F194056C600B3EEFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C3D8E194056C600B3EEFD /* Foundation.framework */; };
 		4A9C3D94194056C600B3EEFD /* VLBinding.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9C3D93194056C600B3EEFD /* VLBinding.h */; };
-		4A9C3D96194056C600B3EEFD /* VLBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3D95194056C600B3EEFD /* VLBinding.m */; };
 		4A9C3D9D194056C600B3EEFD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C3D9C194056C600B3EEFD /* XCTest.framework */; };
 		4A9C3D9E194056C600B3EEFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C3D8E194056C600B3EEFD /* Foundation.framework */; };
 		4A9C3DA0194056C600B3EEFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C3D9F194056C600B3EEFD /* UIKit.framework */; };
 		4A9C3DA3194056C600B3EEFD /* libVLBinding.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C3D8B194056C600B3EEFD /* libVLBinding.a */; };
 		4A9C3DA9194056C600B3EEFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A9C3DA7194056C600B3EEFD /* InfoPlist.strings */; };
 		4A9C3DAB194056C600B3EEFD /* VLBindingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3DAA194056C600B3EEFD /* VLBindingTests.m */; };
+		4A9C3DBA1940683900B3EEFD /* UIViewController+StoryboardTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3DB91940683900B3EEFD /* UIViewController+StoryboardTransition.m */; };
+		4A9C3DBB1940683900B3EEFD /* UIViewController+StoryboardTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3DB91940683900B3EEFD /* UIViewController+StoryboardTransition.m */; };
+		4A9C3DBE19406A1E00B3EEFD /* UIView+PropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3DBD19406A1E00B3EEFD /* UIView+PropertyBinding.m */; };
+		4A9C3DBF19406A1E00B3EEFD /* UIView+PropertyBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3DBD19406A1E00B3EEFD /* UIView+PropertyBinding.m */; };
+		4A9C3DCE19406DD100B3EEFD /* VLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3DCD19406DD100B3EEFD /* VLTableViewCell.m */; };
+		4A9C3DCF19406DD100B3EEFD /* VLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3DCD19406DD100B3EEFD /* VLTableViewCell.m */; };
+		4A9C3DD219406E0A00B3EEFD /* VLTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3DD119406E0A00B3EEFD /* VLTableView.m */; };
+		4A9C3DD319406E0A00B3EEFD /* VLTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3DD119406E0A00B3EEFD /* VLTableView.m */; };
+		4A9C3DD61940897400B3EEFD /* UITableViewCell+ContentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3DD51940897400B3EEFD /* UITableViewCell+ContentData.m */; };
+		4A9C3DD71940897400B3EEFD /* UITableViewCell+ContentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3DD51940897400B3EEFD /* UITableViewCell+ContentData.m */; };
+		4A9C3DDA19408AF100B3EEFD /* VLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3DD919408AF100B3EEFD /* VLTableViewController.m */; };
+		4A9C3DDB19408AF100B3EEFD /* VLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3DD919408AF100B3EEFD /* VLTableViewController.m */; };
+		4A9C3DE219408DD500B3EEFD /* UIViewController+SegueUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3DE119408DD500B3EEFD /* UIViewController+SegueUtil.m */; };
+		4A9C3DE319408DD500B3EEFD /* UIViewController+SegueUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3DE119408DD500B3EEFD /* UIViewController+SegueUtil.m */; };
+		4A9C3DE619409FEE00B3EEFD /* UIViewController+ActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3DE519409FEE00B3EEFD /* UIViewController+ActivityIndicator.m */; };
+		4A9C3DE719409FEE00B3EEFD /* UIViewController+ActivityIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3DE519409FEE00B3EEFD /* UIViewController+ActivityIndicator.m */; };
+		4A9C3DEA1940A24E00B3EEFD /* ActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3DE91940A24E00B3EEFD /* ActivityIndicatorView.m */; };
+		4A9C3DEB1940A24E00B3EEFD /* ActivityIndicatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3DE91940A24E00B3EEFD /* ActivityIndicatorView.m */; };
+		4A9C3DEE1940B7B100B3EEFD /* UIViewController+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3DED1940B7B100B3EEFD /* UIViewController+Data.m */; };
+		4A9C3DEF1940B7B100B3EEFD /* UIViewController+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3DED1940B7B100B3EEFD /* UIViewController+Data.m */; };
+		4A9C3F121945E79F00B3EEFD /* VLBinding.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9C3D93194056C600B3EEFD /* VLBinding.h */; };
+		4A9C3F131945E79F00B3EEFD /* UIViewController+StoryboardTransition.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9C3DB81940683900B3EEFD /* UIViewController+StoryboardTransition.h */; };
+		4A9C3F141945E79F00B3EEFD /* UIView+PropertyBinding.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9C3DBC19406A1E00B3EEFD /* UIView+PropertyBinding.h */; };
+		4A9C3F151945E79F00B3EEFD /* VLTableViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9C3DCC19406DD100B3EEFD /* VLTableViewCell.h */; };
+		4A9C3F161945E79F00B3EEFD /* VLTableView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9C3DD019406E0A00B3EEFD /* VLTableView.h */; };
+		4A9C3F171945E79F00B3EEFD /* UITableViewCell+ContentData.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9C3DD41940897400B3EEFD /* UITableViewCell+ContentData.h */; };
+		4A9C3F181945E79F00B3EEFD /* VLTableViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9C3DD819408AF100B3EEFD /* VLTableViewController.h */; };
+		4A9C3F191945E79F00B3EEFD /* UIViewController+SegueUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9C3DE019408DD500B3EEFD /* UIViewController+SegueUtil.h */; };
+		4A9C3F1A1945E79F00B3EEFD /* UIViewController+ActivityIndicator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9C3DE419409FEE00B3EEFD /* UIViewController+ActivityIndicator.h */; };
+		4A9C3F1B1945E79F00B3EEFD /* ActivityIndicatorView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9C3DE81940A24E00B3EEFD /* ActivityIndicatorView.h */; };
+		4A9C3F1C1945E79F00B3EEFD /* UIViewController+Data.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9C3DEC1940B7B100B3EEFD /* UIViewController+Data.h */; };
+		4A9C3F2A1946FDCB00B3EEFD /* ObservableOperation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4A9C3F291946FB9000B3EEFD /* ObservableOperation.h */; };
+		8B21BCC49C9042C3B4DA70A7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D413F0CE6149EFA93BE758 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +71,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4A9C3F111945E77B00B3EEFD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "${SRCROOT}/Pods/Headers/${PROJECT_NAME}";
+			dstSubfolderSpec = 0;
+			files = (
+				4A9C3F2A1946FDCB00B3EEFD /* ObservableOperation.h in CopyFiles */,
+				4A9C3F121945E79F00B3EEFD /* VLBinding.h in CopyFiles */,
+				4A9C3F131945E79F00B3EEFD /* UIViewController+StoryboardTransition.h in CopyFiles */,
+				4A9C3F141945E79F00B3EEFD /* UIView+PropertyBinding.h in CopyFiles */,
+				4A9C3F151945E79F00B3EEFD /* VLTableViewCell.h in CopyFiles */,
+				4A9C3F161945E79F00B3EEFD /* VLTableView.h in CopyFiles */,
+				4A9C3F171945E79F00B3EEFD /* UITableViewCell+ContentData.h in CopyFiles */,
+				4A9C3F181945E79F00B3EEFD /* VLTableViewController.h in CopyFiles */,
+				4A9C3F191945E79F00B3EEFD /* UIViewController+SegueUtil.h in CopyFiles */,
+				4A9C3F1A1945E79F00B3EEFD /* UIViewController+ActivityIndicator.h in CopyFiles */,
+				4A9C3F1B1945E79F00B3EEFD /* ActivityIndicatorView.h in CopyFiles */,
+				4A9C3F1C1945E79F00B3EEFD /* UIViewController+Data.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -46,13 +99,35 @@
 		4A9C3D8E194056C600B3EEFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4A9C3D92194056C600B3EEFD /* VLBinding-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VLBinding-Prefix.pch"; sourceTree = "<group>"; };
 		4A9C3D93194056C600B3EEFD /* VLBinding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLBinding.h; sourceTree = "<group>"; };
-		4A9C3D95194056C600B3EEFD /* VLBinding.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLBinding.m; sourceTree = "<group>"; };
 		4A9C3D9B194056C600B3EEFD /* VLBindingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VLBindingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9C3D9C194056C600B3EEFD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4A9C3D9F194056C600B3EEFD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		4A9C3DA6194056C600B3EEFD /* VLBindingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VLBindingTests-Info.plist"; sourceTree = "<group>"; };
 		4A9C3DA8194056C600B3EEFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4A9C3DAA194056C600B3EEFD /* VLBindingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLBindingTests.m; sourceTree = "<group>"; };
+		4A9C3DB81940683900B3EEFD /* UIViewController+StoryboardTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+StoryboardTransition.h"; sourceTree = "<group>"; };
+		4A9C3DB91940683900B3EEFD /* UIViewController+StoryboardTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+StoryboardTransition.m"; sourceTree = "<group>"; };
+		4A9C3DBC19406A1E00B3EEFD /* UIView+PropertyBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PropertyBinding.h"; sourceTree = "<group>"; };
+		4A9C3DBD19406A1E00B3EEFD /* UIView+PropertyBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PropertyBinding.m"; sourceTree = "<group>"; };
+		4A9C3DCC19406DD100B3EEFD /* VLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLTableViewCell.h; sourceTree = "<group>"; };
+		4A9C3DCD19406DD100B3EEFD /* VLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLTableViewCell.m; sourceTree = "<group>"; };
+		4A9C3DD019406E0A00B3EEFD /* VLTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLTableView.h; sourceTree = "<group>"; };
+		4A9C3DD119406E0A00B3EEFD /* VLTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLTableView.m; sourceTree = "<group>"; };
+		4A9C3DD41940897400B3EEFD /* UITableViewCell+ContentData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+ContentData.h"; sourceTree = "<group>"; };
+		4A9C3DD51940897400B3EEFD /* UITableViewCell+ContentData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+ContentData.m"; sourceTree = "<group>"; };
+		4A9C3DD819408AF100B3EEFD /* VLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLTableViewController.h; sourceTree = "<group>"; };
+		4A9C3DD919408AF100B3EEFD /* VLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLTableViewController.m; sourceTree = "<group>"; };
+		4A9C3DE019408DD500B3EEFD /* UIViewController+SegueUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SegueUtil.h"; sourceTree = "<group>"; };
+		4A9C3DE119408DD500B3EEFD /* UIViewController+SegueUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SegueUtil.m"; sourceTree = "<group>"; };
+		4A9C3DE419409FEE00B3EEFD /* UIViewController+ActivityIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ActivityIndicator.h"; sourceTree = "<group>"; };
+		4A9C3DE519409FEE00B3EEFD /* UIViewController+ActivityIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ActivityIndicator.m"; sourceTree = "<group>"; };
+		4A9C3DE81940A24E00B3EEFD /* ActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityIndicatorView.h; sourceTree = "<group>"; };
+		4A9C3DE91940A24E00B3EEFD /* ActivityIndicatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityIndicatorView.m; sourceTree = "<group>"; };
+		4A9C3DEC1940B7B100B3EEFD /* UIViewController+Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Data.h"; sourceTree = "<group>"; };
+		4A9C3DED1940B7B100B3EEFD /* UIViewController+Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Data.m"; sourceTree = "<group>"; };
+		4A9C3F291946FB9000B3EEFD /* ObservableOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObservableOperation.h; sourceTree = "<group>"; };
+		56D413F0CE6149EFA93BE758 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD54DA824A25467C9E05B5BB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A9C3D8F194056C600B3EEFD /* Foundation.framework in Frameworks */,
+				8B21BCC49C9042C3B4DA70A7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +161,7 @@
 				4A9C3DA4194056C600B3EEFD /* VLBindingTests */,
 				4A9C3D8D194056C600B3EEFD /* Frameworks */,
 				4A9C3D8C194056C600B3EEFD /* Products */,
+				FD54DA824A25467C9E05B5BB /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +180,7 @@
 				4A9C3D8E194056C600B3EEFD /* Foundation.framework */,
 				4A9C3D9C194056C600B3EEFD /* XCTest.framework */,
 				4A9C3D9F194056C600B3EEFD /* UIKit.framework */,
+				56D413F0CE6149EFA93BE758 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,9 +188,29 @@
 		4A9C3D90194056C600B3EEFD /* VLBinding */ = {
 			isa = PBXGroup;
 			children = (
+				4A9C3F291946FB9000B3EEFD /* ObservableOperation.h */,
 				4A9C3D93194056C600B3EEFD /* VLBinding.h */,
-				4A9C3D95194056C600B3EEFD /* VLBinding.m */,
 				4A9C3D91194056C600B3EEFD /* Supporting Files */,
+				4A9C3DB81940683900B3EEFD /* UIViewController+StoryboardTransition.h */,
+				4A9C3DB91940683900B3EEFD /* UIViewController+StoryboardTransition.m */,
+				4A9C3DBC19406A1E00B3EEFD /* UIView+PropertyBinding.h */,
+				4A9C3DBD19406A1E00B3EEFD /* UIView+PropertyBinding.m */,
+				4A9C3DCC19406DD100B3EEFD /* VLTableViewCell.h */,
+				4A9C3DCD19406DD100B3EEFD /* VLTableViewCell.m */,
+				4A9C3DD019406E0A00B3EEFD /* VLTableView.h */,
+				4A9C3DD119406E0A00B3EEFD /* VLTableView.m */,
+				4A9C3DD41940897400B3EEFD /* UITableViewCell+ContentData.h */,
+				4A9C3DD51940897400B3EEFD /* UITableViewCell+ContentData.m */,
+				4A9C3DD819408AF100B3EEFD /* VLTableViewController.h */,
+				4A9C3DD919408AF100B3EEFD /* VLTableViewController.m */,
+				4A9C3DE019408DD500B3EEFD /* UIViewController+SegueUtil.h */,
+				4A9C3DE119408DD500B3EEFD /* UIViewController+SegueUtil.m */,
+				4A9C3DE419409FEE00B3EEFD /* UIViewController+ActivityIndicator.h */,
+				4A9C3DE519409FEE00B3EEFD /* UIViewController+ActivityIndicator.m */,
+				4A9C3DE81940A24E00B3EEFD /* ActivityIndicatorView.h */,
+				4A9C3DE91940A24E00B3EEFD /* ActivityIndicatorView.m */,
+				4A9C3DEC1940B7B100B3EEFD /* UIViewController+Data.h */,
+				4A9C3DED1940B7B100B3EEFD /* UIViewController+Data.m */,
 			);
 			path = VLBinding;
 			sourceTree = "<group>";
@@ -150,9 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4A9C3DAE194056C600B3EEFD /* Build configuration list for PBXNativeTarget "VLBinding" */;
 			buildPhases = (
+				CED6D973CC7E4CEE833E876C /* Check Pods Manifest.lock */,
 				4A9C3D87194056C600B3EEFD /* Sources */,
 				4A9C3D88194056C600B3EEFD /* Frameworks */,
 				4A9C3D89194056C600B3EEFD /* CopyFiles */,
+				208407B32B84488DB3FA3E10 /* Copy Pods Resources */,
+				4A9C3F111945E77B00B3EEFD /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -219,12 +320,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		208407B32B84488DB3FA3E10 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CED6D973CC7E4CEE833E876C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4A9C3D87194056C600B3EEFD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A9C3D96194056C600B3EEFD /* VLBinding.m in Sources */,
+				4A9C3DD61940897400B3EEFD /* UITableViewCell+ContentData.m in Sources */,
+				4A9C3DCE19406DD100B3EEFD /* VLTableViewCell.m in Sources */,
+				4A9C3DE619409FEE00B3EEFD /* UIViewController+ActivityIndicator.m in Sources */,
+				4A9C3DE219408DD500B3EEFD /* UIViewController+SegueUtil.m in Sources */,
+				4A9C3DDA19408AF100B3EEFD /* VLTableViewController.m in Sources */,
+				4A9C3DD219406E0A00B3EEFD /* VLTableView.m in Sources */,
+				4A9C3DBA1940683900B3EEFD /* UIViewController+StoryboardTransition.m in Sources */,
+				4A9C3DEE1940B7B100B3EEFD /* UIViewController+Data.m in Sources */,
+				4A9C3DEA1940A24E00B3EEFD /* ActivityIndicatorView.m in Sources */,
+				4A9C3DBE19406A1E00B3EEFD /* UIView+PropertyBinding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +375,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A9C3DD71940897400B3EEFD /* UITableViewCell+ContentData.m in Sources */,
+				4A9C3DCF19406DD100B3EEFD /* VLTableViewCell.m in Sources */,
+				4A9C3DE719409FEE00B3EEFD /* UIViewController+ActivityIndicator.m in Sources */,
+				4A9C3DE319408DD500B3EEFD /* UIViewController+SegueUtil.m in Sources */,
+				4A9C3DDB19408AF100B3EEFD /* VLTableViewController.m in Sources */,
 				4A9C3DAB194056C600B3EEFD /* VLBindingTests.m in Sources */,
+				4A9C3DD319406E0A00B3EEFD /* VLTableView.m in Sources */,
+				4A9C3DBB1940683900B3EEFD /* UIViewController+StoryboardTransition.m in Sources */,
+				4A9C3DEF1940B7B100B3EEFD /* UIViewController+Data.m in Sources */,
+				4A9C3DEB1940A24E00B3EEFD /* ActivityIndicatorView.m in Sources */,
+				4A9C3DBF19406A1E00B3EEFD /* UIView+PropertyBinding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +413,7 @@
 /* Begin XCBuildConfiguration section */
 		4A9C3DAC194056C600B3EEFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD54DA824A25467C9E05B5BB /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -290,13 +444,14 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
 		4A9C3DAD194056C600B3EEFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD54DA824A25467C9E05B5BB /* Pods.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -321,6 +476,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -328,6 +484,7 @@
 		};
 		4A9C3DAF194056C600B3EEFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD54DA824A25467C9E05B5BB /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/VLBinding.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -340,6 +497,7 @@
 		};
 		4A9C3DB0194056C600B3EEFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD54DA824A25467C9E05B5BB /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/VLBinding.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -352,6 +510,7 @@
 		};
 		4A9C3DB2194056C600B3EEFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD54DA824A25467C9E05B5BB /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -372,6 +531,7 @@
 		};
 		4A9C3DB3194056C600B3EEFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD54DA824A25467C9E05B5BB /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -405,6 +565,7 @@
 				4A9C3DB0194056C600B3EEFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A9C3DB1194056C600B3EEFD /* Build configuration list for PBXNativeTarget "VLBindingTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +574,7 @@
 				4A9C3DB3194056C600B3EEFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

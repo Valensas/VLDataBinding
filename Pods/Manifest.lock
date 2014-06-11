@@ -1,0 +1,20 @@
+PODS:
+  - CocoaLumberjack (1.9.0):
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/Core (1.9.0)
+  - CocoaLumberjack/Extensions (1.9.0):
+    - CocoaLumberjack/Core
+  - DejalActivityView (1.2)
+  - NSLogger (1.2)
+
+DEPENDENCIES:
+  - CocoaLumberjack
+  - DejalActivityView
+  - NSLogger
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 5766cdd1d0a24bcf15a133c6023747346bf786dd
+  DejalActivityView: ef0970deefe891fefd57af27765ddb21a8265755
+  NSLogger: c4df4b0208d724f244c05f1966b7402f14d7bf55
+
+COCOAPODS: 0.33.1
