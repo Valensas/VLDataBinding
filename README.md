@@ -31,3 +31,14 @@ bindText  String  name
 
 * UITableViewCell carry data through segue to the destination view controller.
 * Synchronous operation is observed to manage the segue which is related to this operation.
+
+##How to integrate
+
+* Add 'pod 'VLDataBinding'' on podfile
+```
+pod 'VLDataBinding'
+```
+* Add '#import VLDataBinding.h' on *.pch file
+```
+ #import VLDataBinding.h
+```
