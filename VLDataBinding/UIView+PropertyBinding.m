@@ -146,10 +146,10 @@ static NSString * const BindKey = @"bind";
 -(instancetype)cloneView{
     NSData *tempArchive = [NSKeyedArchiver archivedDataWithRootObject:self];
     UIView *clonedView = [NSKeyedUnarchiver unarchiveObjectWithData:tempArchive];
-    if ([self respondsToSelector:@selector(selectionSegueTemplate)]) {
+    if ([self valueForKey:@"selectionSegueTemplate"]) {
         [clonedView setValue:[self valueForKey:@"selectionSegueTemplate"] forKey:@"selectionSegueTemplate"];
     }
-    if ([self respondsToSelector:@selector(accessoryActionSegueTemplate)]) {
+    if ([self valueForKey:@"accessoryActionSegueTemplate"]) {
         [clonedView setValue:[self valueForKey:@"accessoryActionSegueTemplate"] forKey:@"accessoryActionSegueTemplate"];
     }
     return clonedView;
