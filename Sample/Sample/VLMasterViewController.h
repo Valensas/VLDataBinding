@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface VLMasterViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *beforeActionButton;
 
 @end

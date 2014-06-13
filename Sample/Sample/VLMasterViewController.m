@@ -7,12 +7,10 @@
 //
 
 #import "VLMasterViewController.h"
-#import "VLDetailViewController.h"
 #import "WaitOperation.h"
 
 
 @implementation VLMasterViewController
-
 -(void)didPerformWithOpertionSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     NSLog(@"didPerformWithOpertionSegue");
     UIViewController *destination=(UIViewController *)segue.destinationViewController;
@@ -21,7 +19,6 @@
 }
 
 -(void)willPerformAfterOperationSegue:(id)sender{
-    
     NSLog(@"willPerformAfterOperationSegue");
     NSOperation<ObservableOperation> *waitOp=[WaitOperation operaitonWithInterval:2];
     self.operation=waitOp;

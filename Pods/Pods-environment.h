@@ -36,3 +36,9 @@
 #define COCOAPODS_VERSION_MINOR_NSLogger 2
 #define COCOAPODS_VERSION_PATCH_NSLogger 0
 
+// jastor
+#define COCOAPODS_POD_AVAILABLE_jastor
+#define COCOAPODS_VERSION_MAJOR_jastor 0
+#define COCOAPODS_VERSION_MINOR_jastor 2
+#define COCOAPODS_VERSION_PATCH_jastor 1
+

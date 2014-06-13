@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Valensas. All rights reserved.
 //
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=0 ${inherited} NSLOGGER_BUILD_USERNAME="${USER}"
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/CocoaLumberjack" "${PODS_ROOT}/Headers/DejalActivityView" "${PODS_ROOT}/Headers/NSLogger" "${PODS_ROOT}/Headers/VLBinding"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/CocoaLumberjack" -isystem "${PODS_ROOT}/Headers/DejalActivityView" -isystem "${PODS_ROOT}/Headers/NSLogger"  -isystem "${PODS_ROOT}/Headers/VLBinding"
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/CocoaLumberjack" "${PODS_ROOT}/Headers/DejalActivityView" "${PODS_ROOT}/Headers/NSLogger" "${PODS_ROOT}/Headers/jastor" "${PODS_ROOT}/Headers/VLBinding"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers" -isystem "${PODS_ROOT}/Headers/CocoaLumberjack" -isystem "${PODS_ROOT}/Headers/DejalActivityView" -isystem "${PODS_ROOT}/Headers/NSLogger"  -isystem "${PODS_ROOT}/Headers/jastor" -isystem "${PODS_ROOT}/Headers/VLDataBinding"
 OTHER_LDFLAGS = -ObjC -framework CFNetwork -framework SystemConfiguration -framework UIKit
 PODS_ROOT = ${SRCROOT}/../Pods

@@ -15,18 +15,26 @@
 		4A9C3ED91945C61200B3EEFD /* VLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3ED81945C61200B3EEFD /* VLAppDelegate.m */; };
 		4A9C3EDC1945C61200B3EEFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A9C3EDA1945C61200B3EEFD /* Main.storyboard */; };
 		4A9C3EDF1945C61200B3EEFD /* VLMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3EDE1945C61200B3EEFD /* VLMasterViewController.m */; };
-		4A9C3EE21945C61200B3EEFD /* VLDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3EE11945C61200B3EEFD /* VLDetailViewController.m */; };
 		4A9C3EE41945C61200B3EEFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A9C3EE31945C61200B3EEFD /* Images.xcassets */; };
 		4A9C3EEB1945C61200B3EEFD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C3EEA1945C61200B3EEFD /* XCTest.framework */; };
 		4A9C3EEC1945C61200B3EEFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C3EC81945C61200B3EEFD /* Foundation.framework */; };
 		4A9C3EED1945C61200B3EEFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C3ECC1945C61200B3EEFD /* UIKit.framework */; };
 		4A9C3EF51945C61200B3EEFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A9C3EF31945C61200B3EEFD /* InfoPlist.strings */; };
 		4A9C3EF71945C61200B3EEFD /* SampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3EF61945C61200B3EEFD /* SampleTests.m */; };
-		4A9C3F011945C6FE00B3EEFD /* libVLBinding.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A9C3F001945C6FE00B3EEFD /* libVLBinding.a */; };
 		4A9C3F1E1945F46100B3EEFD /* Pods.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4A9C3F1D1945F46100B3EEFD /* Pods.xcconfig */; };
 		4A9C3F1F1945F46100B3EEFD /* Pods.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4A9C3F1D1945F46100B3EEFD /* Pods.xcconfig */; };
 		4A9C3F221945FE2E00B3EEFD /* WaitOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3F211945FE2E00B3EEFD /* WaitOperation.m */; };
 		4A9C3F231945FE2E00B3EEFD /* WaitOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9C3F211945FE2E00B3EEFD /* WaitOperation.m */; };
+		4AAB43F31948362300BB3BE9 /* VLFetchDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAB43F21948362300BB3BE9 /* VLFetchDataViewController.m */; };
+		4AAB44011948430200BB3BE9 /* Report.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAB43F61948430200BB3BE9 /* Report.m */; };
+		4AAB44021948430200BB3BE9 /* Reporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAB43F81948430200BB3BE9 /* Reporter.m */; };
+		4AAB44031948430200BB3BE9 /* Chapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAB43FA1948430200BB3BE9 /* Chapter.m */; };
+		4AAB44041948430200BB3BE9 /* UserGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAB43FC1948430200BB3BE9 /* UserGroup.m */; };
+		4AAB44051948430200BB3BE9 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAB43FE1948430200BB3BE9 /* User.m */; };
+		4AAB44061948430200BB3BE9 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAB44001948430200BB3BE9 /* Account.m */; };
+		4AAB4408194846BD00BB3BE9 /* reports.json in Resources */ = {isa = PBXBuildFile; fileRef = 4AAB4407194846BD00BB3BE9 /* reports.json */; };
+		4AAB440B194848B600BB3BE9 /* ReadFileOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AAB440A194848B600BB3BE9 /* ReadFileOperation.m */; };
+		4AAB440E194ADDF600BB3BE9 /* libVLDataBinding.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AAB440D194ADDF600BB3BE9 /* libVLDataBinding.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +61,6 @@
 		4A9C3EDB1945C61200B3EEFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A9C3EDD1945C61200B3EEFD /* VLMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLMasterViewController.h; sourceTree = "<group>"; };
 		4A9C3EDE1945C61200B3EEFD /* VLMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLMasterViewController.m; sourceTree = "<group>"; };
-		4A9C3EE01945C61200B3EEFD /* VLDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLDetailViewController.h; sourceTree = "<group>"; };
-		4A9C3EE11945C61200B3EEFD /* VLDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLDetailViewController.m; sourceTree = "<group>"; };
 		4A9C3EE31945C61200B3EEFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4A9C3EE91945C61200B3EEFD /* SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9C3EEA1945C61200B3EEFD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -65,6 +71,24 @@
 		4A9C3F1D1945F46100B3EEFD /* Pods.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Pods.xcconfig; sourceTree = "<group>"; };
 		4A9C3F201945FE2E00B3EEFD /* WaitOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaitOperation.h; sourceTree = "<group>"; };
 		4A9C3F211945FE2E00B3EEFD /* WaitOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaitOperation.m; sourceTree = "<group>"; };
+		4AAB43F11948362300BB3BE9 /* VLFetchDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VLFetchDataViewController.h; sourceTree = "<group>"; };
+		4AAB43F21948362300BB3BE9 /* VLFetchDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VLFetchDataViewController.m; sourceTree = "<group>"; };
+		4AAB43F51948430200BB3BE9 /* Report.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Report.h; sourceTree = "<group>"; };
+		4AAB43F61948430200BB3BE9 /* Report.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Report.m; sourceTree = "<group>"; };
+		4AAB43F71948430200BB3BE9 /* Reporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reporter.h; sourceTree = "<group>"; };
+		4AAB43F81948430200BB3BE9 /* Reporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reporter.m; sourceTree = "<group>"; };
+		4AAB43F91948430200BB3BE9 /* Chapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chapter.h; sourceTree = "<group>"; };
+		4AAB43FA1948430200BB3BE9 /* Chapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chapter.m; sourceTree = "<group>"; };
+		4AAB43FB1948430200BB3BE9 /* UserGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserGroup.h; sourceTree = "<group>"; };
+		4AAB43FC1948430200BB3BE9 /* UserGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserGroup.m; sourceTree = "<group>"; };
+		4AAB43FD1948430200BB3BE9 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		4AAB43FE1948430200BB3BE9 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		4AAB43FF1948430200BB3BE9 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		4AAB44001948430200BB3BE9 /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		4AAB4407194846BD00BB3BE9 /* reports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = reports.json; sourceTree = "<group>"; };
+		4AAB4409194848B600BB3BE9 /* ReadFileOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadFileOperation.h; sourceTree = "<group>"; };
+		4AAB440A194848B600BB3BE9 /* ReadFileOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadFileOperation.m; sourceTree = "<group>"; };
+		4AAB440D194ADDF600BB3BE9 /* libVLDataBinding.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libVLDataBinding.a; path = "../build/Debug-iphoneos/libVLDataBinding.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A9C3F011945C6FE00B3EEFD /* libVLBinding.a in Frameworks */,
+				4AAB440E194ADDF600BB3BE9 /* libVLDataBinding.a in Frameworks */,
 				4A9C3ECB1945C61200B3EEFD /* CoreGraphics.framework in Frameworks */,
 				4A9C3ECD1945C61200B3EEFD /* UIKit.framework in Frameworks */,
 				4A9C3EC91945C61200B3EEFD /* Foundation.framework in Frameworks */,
@@ -95,6 +119,7 @@
 		4A9C3EBC1945C61200B3EEFD = {
 			isa = PBXGroup;
 			children = (
+				4AAB43F4194842E900BB3BE9 /* Models */,
 				4A9C3F1D1945F46100B3EEFD /* Pods.xcconfig */,
 				4A9C3ECE1945C61200B3EEFD /* Sample */,
 				4A9C3EF01945C61200B3EEFD /* SampleTests */,
@@ -115,6 +140,7 @@
 		4A9C3EC71945C61200B3EEFD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4AAB440D194ADDF600BB3BE9 /* libVLDataBinding.a */,
 				4A9C3F001945C6FE00B3EEFD /* libVLBinding.a */,
 				4A9C3EC81945C61200B3EEFD /* Foundation.framework */,
 				4A9C3ECA1945C61200B3EEFD /* CoreGraphics.framework */,
@@ -127,6 +153,7 @@
 		4A9C3ECE1945C61200B3EEFD /* Sample */ = {
 			isa = PBXGroup;
 			children = (
+				4AAB4407194846BD00BB3BE9 /* reports.json */,
 				4A9C3F201945FE2E00B3EEFD /* WaitOperation.h */,
 				4A9C3F211945FE2E00B3EEFD /* WaitOperation.m */,
 				4A9C3ED71945C61200B3EEFD /* VLAppDelegate.h */,
@@ -134,10 +161,12 @@
 				4A9C3EDA1945C61200B3EEFD /* Main.storyboard */,
 				4A9C3EDD1945C61200B3EEFD /* VLMasterViewController.h */,
 				4A9C3EDE1945C61200B3EEFD /* VLMasterViewController.m */,
-				4A9C3EE01945C61200B3EEFD /* VLDetailViewController.h */,
-				4A9C3EE11945C61200B3EEFD /* VLDetailViewController.m */,
 				4A9C3EE31945C61200B3EEFD /* Images.xcassets */,
 				4A9C3ECF1945C61200B3EEFD /* Supporting Files */,
+				4AAB43F11948362300BB3BE9 /* VLFetchDataViewController.h */,
+				4AAB43F21948362300BB3BE9 /* VLFetchDataViewController.m */,
+				4AAB4409194848B600BB3BE9 /* ReadFileOperation.h */,
+				4AAB440A194848B600BB3BE9 /* ReadFileOperation.m */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -169,6 +198,25 @@
 				4A9C3EF31945C61200B3EEFD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4AAB43F4194842E900BB3BE9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4AAB43F51948430200BB3BE9 /* Report.h */,
+				4AAB43F61948430200BB3BE9 /* Report.m */,
+				4AAB43F71948430200BB3BE9 /* Reporter.h */,
+				4AAB43F81948430200BB3BE9 /* Reporter.m */,
+				4AAB43F91948430200BB3BE9 /* Chapter.h */,
+				4AAB43FA1948430200BB3BE9 /* Chapter.m */,
+				4AAB43FB1948430200BB3BE9 /* UserGroup.h */,
+				4AAB43FC1948430200BB3BE9 /* UserGroup.m */,
+				4AAB43FD1948430200BB3BE9 /* User.h */,
+				4AAB43FE1948430200BB3BE9 /* User.m */,
+				4AAB43FF1948430200BB3BE9 /* Account.h */,
+				4AAB44001948430200BB3BE9 /* Account.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +299,7 @@
 				4A9C3EE41945C61200B3EEFD /* Images.xcassets in Resources */,
 				4A9C3ED31945C61200B3EEFD /* InfoPlist.strings in Resources */,
 				4A9C3F1E1945F46100B3EEFD /* Pods.xcconfig in Resources */,
+				4AAB4408194846BD00BB3BE9 /* reports.json in Resources */,
 				4A9C3EDC1945C61200B3EEFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,11 +320,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AAB44021948430200BB3BE9 /* Reporter.m in Sources */,
 				4A9C3ED91945C61200B3EEFD /* VLAppDelegate.m in Sources */,
+				4AAB440B194848B600BB3BE9 /* ReadFileOperation.m in Sources */,
+				4AAB44011948430200BB3BE9 /* Report.m in Sources */,
 				4A9C3EDF1945C61200B3EEFD /* VLMasterViewController.m in Sources */,
+				4AAB44041948430200BB3BE9 /* UserGroup.m in Sources */,
 				4A9C3ED51945C61200B3EEFD /* main.m in Sources */,
+				4AAB44051948430200BB3BE9 /* User.m in Sources */,
 				4A9C3F221945FE2E00B3EEFD /* WaitOperation.m in Sources */,
-				4A9C3EE21945C61200B3EEFD /* VLDetailViewController.m in Sources */,
+				4AAB44061948430200BB3BE9 /* Account.m in Sources */,
+				4AAB44031948430200BB3BE9 /* Chapter.m in Sources */,
+				4AAB43F31948362300BB3BE9 /* VLFetchDataViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +467,7 @@
 					"$(inherited)",
 					"/Users/canyaman/Projects/VLBinding/build/Debug-iphoneos",
 					"/Users/canyaman/Projects/VLBinding/Pods/build/Debug-iphoneos",
+					"/Users/canyaman/Projects/VLDataBinding/build/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -430,6 +487,7 @@
 					"$(inherited)",
 					"/Users/canyaman/Projects/VLBinding/build/Debug-iphoneos",
 					"/Users/canyaman/Projects/VLBinding/Pods/build/Debug-iphoneos",
+					"/Users/canyaman/Projects/VLDataBinding/build/Debug-iphoneos",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -497,6 +555,7 @@
 				4A9C3EFC1945C61200B3EEFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4A9C3EFD1945C61200B3EEFD /* Build configuration list for PBXNativeTarget "SampleTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +564,7 @@
 				4A9C3EFF1945C61200B3EEFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

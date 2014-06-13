@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "69D33C9C9FF24249B54A8841"
+               BlueprintIdentifier = "248F34CD36D74B41A2834916"
                BuildableName = "libPods.a"
                BlueprintName = "Pods"
                ReferencedContainer = "container:../Pods/Pods.xcodeproj">
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4A9C3D8A194056C600B3EEFD"
-               BuildableName = "libVLBinding.a"
-               BlueprintName = "VLBinding"
-               ReferencedContainer = "container:../VLBinding.xcodeproj">
+               BuildableName = "libVLDataBinding.a"
+               BlueprintName = "VLDataBinding"
+               ReferencedContainer = "container:../VLDataBinding.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

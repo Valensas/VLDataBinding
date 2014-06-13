@@ -1,0 +1,492 @@
+[
+  {
+    "rating": 5, 
+    "subscribedUsers": {
+      "users": [
+        {
+          "uid": 12341, 
+          "title": "User One", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user1@company.com", 
+          "name": "User1"
+        }, 
+        {
+          "uid": 12342, 
+          "title": "User Two", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user2@company.com", 
+          "name": "User2"
+        }, 
+        {
+          "uid": 12343, 
+          "title": "User Three", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user3@company.com", 
+          "name": "User3"
+        }, 
+        {
+          "uid": 12344, 
+          "title": "User Four", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user4@company.com", 
+          "name": "User4"
+        }, 
+        {
+          "uid": 12345, 
+          "title": "User Five", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user5@company.com", 
+          "name": "User5"
+        }
+      ], 
+      "name": "User Group1", 
+      "description": "Group Description One"
+    }, 
+    "description": "Description of the report1", 
+    "tags": [
+      "tag1", 
+      "tag2", 
+      "tag3", 
+      "tag4", 
+      "tag5"
+    ], 
+    "reporter": {
+      "company": "Company XYZ", 
+      "homePage": "www.company.com/xyz", 
+      "user": {
+        "uid": 12341, 
+        "title": "User One", 
+        "admin": true, 
+        "avatar": "http://localhost:54321/avatar1.png", 
+        "email": "user1@company.com", 
+        "name": "User1"
+      }, 
+      "signature": "Signature 1234"
+    }, 
+    "chapters": [
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter1"
+      }, 
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter2"
+      }, 
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter3"
+      }, 
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter4"
+      }, 
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter5"
+      }
+    ], 
+    "name": "Report1"
+  }, 
+  {
+    "rating": 5, 
+    "subscribedUsers": {
+      "users": [
+        {
+          "uid": 12341, 
+          "title": "User One", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user1@company.com", 
+          "name": "User1"
+        }, 
+        {
+          "uid": 12342, 
+          "title": "User Two", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user2@company.com", 
+          "name": "User2"
+        }, 
+        {
+          "uid": 12343, 
+          "title": "User Three", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user3@company.com", 
+          "name": "User3"
+        }, 
+        {
+          "uid": 12344, 
+          "title": "User Four", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user4@company.com", 
+          "name": "User4"
+        }, 
+        {
+          "uid": 12345, 
+          "title": "User Five", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user5@company.com", 
+          "name": "User5"
+        }
+      ], 
+      "name": "User Group1", 
+      "description": "Group Description One"
+    }, 
+    "description": "Description of the report1", 
+    "tags": [
+      "tag1", 
+      "tag2", 
+      "tag3", 
+      "tag4", 
+      "tag5"
+    ], 
+    "reporter": {
+      "company": "Company XYZ", 
+      "homePage": "www.company.com/xyz", 
+      "user": {
+        "uid": 12341, 
+        "title": "User One", 
+        "admin": true, 
+        "avatar": "http://localhost:54321/avatar1.png", 
+        "email": "user1@company.com", 
+        "name": "User1"
+      }, 
+      "signature": "Signature 1234"
+    }, 
+    "chapters": [
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter1"
+      }, 
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter2"
+      }, 
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter3"
+      }, 
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter4"
+      }, 
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter5"
+      }
+    ], 
+    "name": "Report2"
+  }, 
+  {
+    "rating": 5, 
+    "subscribedUsers": {
+      "users": [
+        {
+          "uid": 12341, 
+          "title": "User One", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user1@company.com", 
+          "name": "User1"
+        }, 
+        {
+          "uid": 12342, 
+          "title": "User Two", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user2@company.com", 
+          "name": "User2"
+        }, 
+        {
+          "uid": 12343, 
+          "title": "User Three", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user3@company.com", 
+          "name": "User3"
+        }, 
+        {
+          "uid": 12344, 
+          "title": "User Four", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user4@company.com", 
+          "name": "User4"
+        }, 
+        {
+          "uid": 12345, 
+          "title": "User Five", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user5@company.com", 
+          "name": "User5"
+        }
+      ], 
+      "name": "User Group1", 
+      "description": "Group Description One"
+    }, 
+    "description": "Description of the report1", 
+    "tags": [
+      "tag1", 
+      "tag2", 
+      "tag3", 
+      "tag4", 
+      "tag5"
+    ], 
+    "reporter": {
+      "company": "Company XYZ", 
+      "homePage": "www.company.com/xyz", 
+      "user": {
+        "uid": 12341, 
+        "title": "User One", 
+        "admin": true, 
+        "avatar": "http://localhost:54321/avatar1.png", 
+        "email": "user1@company.com", 
+        "name": "User1"
+      }, 
+      "signature": "Signature 1234"
+    }, 
+    "chapters": [
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter1"
+      }, 
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter2"
+      }, 
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter3"
+      }, 
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter4"
+      }, 
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter5"
+      }
+    ], 
+    "name": "Report3"
+  }, 
+  {
+    "rating": 5, 
+    "subscribedUsers": {
+      "users": [
+        {
+          "uid": 12341, 
+          "title": "User One", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user1@company.com", 
+          "name": "User1"
+        }, 
+        {
+          "uid": 12342, 
+          "title": "User Two", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user2@company.com", 
+          "name": "User2"
+        }, 
+        {
+          "uid": 12343, 
+          "title": "User Three", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user3@company.com", 
+          "name": "User3"
+        }, 
+        {
+          "uid": 12344, 
+          "title": "User Four", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user4@company.com", 
+          "name": "User4"
+        }, 
+        {
+          "uid": 12345, 
+          "title": "User Five", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user5@company.com", 
+          "name": "User5"
+        }
+      ], 
+      "name": "User Group1", 
+      "description": "Group Description One"
+    }, 
+    "description": "Description of the report1", 
+    "tags": [
+      "tag1", 
+      "tag2", 
+      "tag3", 
+      "tag4", 
+      "tag5"
+    ], 
+    "reporter": {
+      "company": "Company XYZ", 
+      "homePage": "www.company.com/xyz", 
+      "user": {
+        "uid": 12341, 
+        "title": "User One", 
+        "admin": true, 
+        "avatar": "http://localhost:54321/avatar1.png", 
+        "email": "user1@company.com", 
+        "name": "User1"
+      }, 
+      "signature": "Signature 1234"
+    }, 
+    "chapters": [
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter1"
+      }, 
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter2"
+      }, 
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter3"
+      }, 
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter4"
+      }, 
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter5"
+      }
+    ], 
+    "name": "Report4"
+  }, 
+  {
+    "rating": 5, 
+    "subscribedUsers": {
+      "users": [
+        {
+          "uid": 12341, 
+          "title": "User One", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user1@company.com", 
+          "name": "User1"
+        }, 
+        {
+          "uid": 12342, 
+          "title": "User Two", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user2@company.com", 
+          "name": "User2"
+        }, 
+        {
+          "uid": 12343, 
+          "title": "User Three", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user3@company.com", 
+          "name": "User3"
+        }, 
+        {
+          "uid": 12344, 
+          "title": "User Four", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user4@company.com", 
+          "name": "User4"
+        }, 
+        {
+          "uid": 12345, 
+          "title": "User Five", 
+          "admin": true, 
+          "avatar": "http://localhost:54321/avatar1.png", 
+          "email": "user5@company.com", 
+          "name": "User5"
+        }
+      ], 
+      "name": "User Group1", 
+      "description": "Group Description One"
+    }, 
+    "description": "Description of the report1", 
+    "tags": [
+      "tag1", 
+      "tag2", 
+      "tag3", 
+      "tag4", 
+      "tag5"
+    ], 
+    "reporter": {
+      "company": "Company XYZ", 
+      "homePage": "www.company.com/xyz", 
+      "user": {
+        "uid": 12341, 
+        "title": "User One", 
+        "admin": true, 
+        "avatar": "http://localhost:54321/avatar1.png", 
+        "email": "user1@company.com", 
+        "name": "User1"
+      }, 
+      "signature": "Signature 1234"
+    }, 
+    "chapters": [
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter1"
+      }, 
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter2"
+      }, 
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter3"
+      }, 
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter4"
+      }, 
+      {
+        "content": "Markdown content", 
+        "subtitle": "Chapter detail", 
+        "title": "Chapter5"
+      }
+    ], 
+    "name": "Report5"
+  }
+]
