@@ -12,10 +12,5 @@
 #import "UIViewController+ActivityIndicator.h"
 #import "UIView+PropertyBinding.h"
 #import "UITableViewCell+ContentData.h"
-#import "VLTableViewCell.h"
 #import "VLTableView.h"
 #import "ObservableOperation.h"
-
-@interface VLDataBinding : NSObject
-
-@end
