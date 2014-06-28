@@ -14,7 +14,3 @@
 #import "UITableViewCell+ContentData.h"
 #import "VLTableView.h"
 #import "ObservableOperation.h"
-
-@interface VLDataBinding : NSObject
-
-@end

@@ -61,7 +61,6 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell=nil;
-    if ([self isDynamicCell:indexPath]) {
         if ([self isLoadingSection:indexPath.section]) {
             cell=[self tableView:tableView loadingCellForSection:indexPath.section];
         }else{
@@ -69,21 +68,17 @@
             if ((sectionArray.count==0)&&(self.tableData)&&(indexPath.row==0)) {
                 cell=[self tableView:tableView noDataCellForSection:indexPath.section];
             }else{
-                cell=[self tableView:tableView contentCellForSection:indexPath.section];
-                //if not reused
-                if (cell.contentView.subviews.count==0) {
-                    //clone prototype cell
-                    cell=[cell cloneView];
+                if ([self isDynamicCell:indexPath]) {
+                    cell=[self tableView:tableView contentCellForSection:indexPath.section];
+                    id cellData=[self cellDataForIndexPath:indexPath];
+                    [cell bindWithObject:cellData];
+                    cell.contentData=cellData;
+                }else{
+                    cell=[super tableView:tableView cellForRowAtIndexPath:indexPath];
+                    [cell bindWithObject:self.tableData];
                 }
-                id cellData=[self cellDataForIndexPath:indexPath];
-                [cell bindWithObject:cellData];
-                cell.contentData=cellData;
             }
         }
-    }else{
-        cell=[super tableView:tableView cellForRowAtIndexPath:indexPath];
-        [cell bindWithObject:self.tableData];
-    }
     return cell;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -126,7 +121,12 @@
             height=[self tableView:tableView noDataCellForSection:indexPath.section].frame.size.height;
         }else{
             NSIndexPath *genericIndexPath=[NSIndexPath indexPathForRow:0 inSection:indexPath.section];
-            height=[super tableView:tableView heightForRowAtIndexPath:genericIndexPath];
+            UITableViewCell *dataCell=[self tableView:tableView dynamicTableViewCellForSection:indexPath.section];
+            if (dataCell) {
+               height=dataCell.frame.size.height;
+            }else{
+                height=[super tableView:tableView heightForRowAtIndexPath:genericIndexPath];
+            }
         }
         return height;
     }else{
@@ -264,7 +264,7 @@
     //            [subview bindWithObject:data];
     //        }
     //    }
-    if ([data isKindOfClass:[NSArray class]]&&(self.sectionsKeyPath==nil)) {
+    if ([data isKindOfClass:[NSArray class]]&&((self.sectionsKeyPath==nil)||(self.sectionsKeyPath.count==0))) {
         //This is dynamic simple 1 section table view
         self.sectionsKeyPath=[NSMutableDictionary dictionaryWithObject:@"self" forKey:[NSNumber numberWithInteger:0]];
     }
@@ -326,19 +326,26 @@
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView noDataCellForSection:(NSInteger)section{
     
-    UITableViewCell *noDataCell=[self.prototypeCells objectForKey:@"Section%dNoDataCell"];
+    UITableViewCell *noDataCell=[self.prototypeCells objectForKey:[NSString stringWithFormat:@"Section%dNoDataCell",(int)section]];
     if (!noDataCell) {
         noDataCell = [self.prototypeCells objectForKey:@"NoDataCell"];
     }
-    return noDataCell;
-   
+    if (noDataCell) {
+        return [noDataCell cloneView];
+    }else{
+        return [self tableView:tableView dynamicNoDataCellForSection:section];
+    }
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView loadingCellForSection:(NSInteger)section{
     UITableViewCell *loadingCell=[self.prototypeCells objectForKey:[NSString stringWithFormat:@"Section%dLoadingCell",(int)section]];
     if (!loadingCell) {
         loadingCell = [self.prototypeCells objectForKey:@"LoadingCell"];
     }
-    return loadingCell;
+    if (loadingCell) {
+        return [loadingCell cloneView];
+    }else{
+        return [self tableView:tableView dynamicLoadingCellForSection:section];
+    }
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView contentCellForSection:(NSInteger)section{
     UITableViewCell *sectionPrototypeCell=[self tableView:tableView prototypeCellForSection:section];
@@ -347,6 +354,37 @@
         cellIdentifier=[NSString stringWithFormat:@"Cell%d",(int)section];;
     }
     sectionPrototypeCell=[self.prototypeCells objectForKey:cellIdentifier];
-    return [sectionPrototypeCell cloneView];
+    if (sectionPrototypeCell) {
+        return [sectionPrototypeCell cloneView];
+    }else{
+        return [self tableView:tableView dynamicTableViewCellForSection:section];
+    }
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView dynamicTableViewCellForSection:(NSInteger)section{
+    NSString  *cellIdentifier=@"Cell";
+    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (!cell) {
+        cellIdentifier=[NSString stringWithFormat:@"Cell%d",(int)section];
+        cell=[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    }
+    return cell;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView dynamicLoadingCellForSection:(NSInteger)section{
+    NSString  *cellIdentifier=@"LoadingCell";
+    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (!cell) {
+        cellIdentifier=[NSString stringWithFormat:@"Section%dLoadingCell",(int)section];
+        cell=[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    }
+    return cell;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView dynamicNoDataCellForSection:(NSInteger)section{
+    NSString  *cellIdentifier=@"NoDataCell";
+    UITableViewCell *cell=[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (!cell) {
+        cellIdentifier=[NSString stringWithFormat:@"Section%dNoDataCell",(int)section];
+        cell=[tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    }
+    return cell;
 }
 @end
