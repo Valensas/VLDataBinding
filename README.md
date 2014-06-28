@@ -3,7 +3,8 @@ VLDataBinding
 
 ###iOS storyboard data binding library.  
 
-* Organize segue life cycle.
+* Manage segue life cycle.
+
 ```objectivec
 //Segue identifier is 'WithOpertionSegue'
 //After the segue performs; prepare destination view controller
@@ -29,4 +30,15 @@ bindText  String  name
 ```
 
 * UITableViewCell carry data through segue to the destination view controller.
-* Synchronous operation is observing to manage segue related to this operation.
+* Synchronous operation is observed to manage the segue which is related to this operation.
+
+##How to integrate
+
+* Add 'pod 'VLDataBinding'' on podfile
+```
+pod 'VLDataBinding'
+```
+* Add '#import VLDataBinding.h' on *.pch file
+```
+ #import VLDataBinding.h
+```
