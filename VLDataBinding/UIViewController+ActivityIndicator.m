@@ -43,7 +43,6 @@ static void * const ActivityIndicatorCoverKey = (void*)&ActivityIndicatorCoverKe
     dispatch_async(dispatch_get_main_queue(), ^{
         if (self.operation!=nil) {
             if (![self.operation isFinished]) {
-                DDLogVerbose(@"viewWillAppear operation exist");
                 [self displayActivityView:nil];
             }
         }
@@ -51,7 +50,6 @@ static void * const ActivityIndicatorCoverKey = (void*)&ActivityIndicatorCoverKe
     [self _vl_viewWillAppear:animated];
 }
 -(void)_vl_viewWillDisappear:(BOOL)animated{
-    DDLogVerbose(@"View Did Disappear");
     if(self.activityIndicatorView.operation){
         [self removeActivityViewWithAnimation:NO];
     }
@@ -59,7 +57,6 @@ static void * const ActivityIndicatorCoverKey = (void*)&ActivityIndicatorCoverKe
 }
 
 -(void)removeActivityViewWithAnimation:(BOOL)animation{
-    DDLogVerbose(@"Remove ActivityView WithAnimation");
     dispatch_async(dispatch_get_main_queue(), ^{
         [self.activityIndicatorView removeActivityViewWithAnimation:animation];
     });

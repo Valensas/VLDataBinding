@@ -70,7 +70,7 @@ static NSString * const BindKey = @"bind";
             if ([self respondsToSelector:NSSelectorFromString(boolPropertyName)]) {
                 [bindDict setValue:bindablePropertyKey forKey:value];//keyPath - property map
             }else{
-                //DDLogWarn(@"Missing propery of :%@ for keyPath:%@",self,key);
+                NSLog(@"Missing propery of :%@ for keyPath:%@",self,key);
             }
         }
     }else{

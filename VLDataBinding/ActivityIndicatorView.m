@@ -68,7 +68,6 @@ static void *operationIsFinished = &operationIsFinished;
 }
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
     if (context == operationIsFinished) {
-        NSLog(@"Operation Finished Observed");
         NSOperation *op=object;
         if(op.isFinished){
             //[self removeActivityViewWithAnimation:NO];
