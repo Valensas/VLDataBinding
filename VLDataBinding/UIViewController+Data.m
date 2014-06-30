@@ -8,6 +8,7 @@
 
 #import "UIViewController+Data.h"
 #import "VLTableViewController.h"
+#import "UIView+PropertyBinding.h"
 #import <objc/runtime.h>
 
 static void * const DataKey = (void*)&DataKey;
@@ -19,6 +20,8 @@ static void * const DataKey = (void*)&DataKey;
         dispatch_async(dispatch_get_main_queue(), ^{
             ((VLTableViewController *)self).tableData=data;
         });
+    }else{
+        [self.view bindWithObject:data];
     }
     objc_setAssociatedObject(self, DataKey, data, OBJC_ASSOCIATION_RETAIN);
 }
