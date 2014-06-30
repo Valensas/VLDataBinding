@@ -54,7 +54,7 @@
                     }
                     elem = class_getSuperclass(elem);
                 }*/
-                DDLogVerbose(@"VLTableView register cell identifier:%@ index:%d-%d",cell.reuseIdentifier,[section intValue],i);
+                //DDLogVerbose(@"VLTableView register cell identifier:%@ index:%d-%d",cell.reuseIdentifier,[section intValue],i);
             }
         }
     }

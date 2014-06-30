@@ -6,9 +6,10 @@
 
 #ifdef __OBJC__
     #import <Foundation/Foundation.h>
-    #import "DDLog.h"
+    //#import "DDLog.h"
 #endif
 
+/*
 #if VL_LOG_LEVEL == ERROR
 static const int ddLogLevel = LOG_FLAG_ERROR;
 #elif VL_LOG_LEVEL == WARN
@@ -22,3 +23,4 @@ static const int ddLogLevel = LOG_FLAG_VERBOSE;
 #else
 static const int ddLogLevel = LOG_LEVEL_OFF;
 #endif
+*/
