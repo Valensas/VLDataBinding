@@ -54,7 +54,7 @@
                     }
                     elem = class_getSuperclass(elem);
                 }*/
-                NSLog(@"VLTableView register cell identifier:%@ index:%d-%d",cell.reuseIdentifier,[section intValue],i);
+                DDLogVerbose(@"VLTableView register cell identifier:%@ index:%d-%d",cell.reuseIdentifier,[section intValue],i);
             }
         }
     }
@@ -107,7 +107,7 @@
             }
         }
     }
-    NSLog(@"NumberOfRow:%d",(int)numOfRow);
+    DDLogVerbose(@"NumberOfRow:%d",(int)numOfRow);
     return numOfRow;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -309,7 +309,7 @@
     }
 }
 -(BOOL)isStaticSection:(NSInteger)section{
-    NSLog(@"isStaticSection:%d",(int)section);
+    DDLogVerbose(@"isStaticSection:%d",(int)section);
     if ([self.tableView isKindOfClass:[VLTableView class]]) {
         return ![self.sectionsKeyPath.allKeys containsObject:[NSNumber numberWithInteger:section]];
     }else{
@@ -317,7 +317,7 @@
     }
 }
 -(BOOL)isLoadingSection:(NSInteger)section{
-    NSLog(@"isLoadingSection:%d",(int)section);
+    DDLogVerbose(@"isLoadingSection:%d",(int)section);
     if (self.tableData||[self isStaticSection:section]) {
         return false;
     }else{

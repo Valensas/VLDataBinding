@@ -67,7 +67,7 @@ static void *operationIsFinished = &operationIsFinished;
     self.activityView=nil;
 }
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
-    NSLog(@"Operation Observing");
+    DDLogDebug(@"Operation Observing");
     if (context == operationIsFinished) {
         NSLog(@"Operation Finished Observed");
         NSOperation *op=object;
@@ -82,7 +82,7 @@ static void *operationIsFinished = &operationIsFinished;
     }
 }
 -(void)dealloc{
-    NSLog(@"Activity Indicator Dealloced");
+    DDLogDebug(@"Activity Indicator Dealloced");
     if (self.operation) {
         [self.operation removeObserver:self forKeyPath:@"state"];
         self.operation=nil;

@@ -10,25 +10,7 @@
 #import <objc/runtime.h>
 
 @implementation VLTableView
-/*
 
-else if([key isEqualToString:SegueKey]){
-    self.segueIdentifier=value;
-}else if([key hasPrefix:SectionDataKey]){
-    NSString *sectionNo=[key substringFromIndex:SectionDataKey.length];
-    NSInteger section=[sectionNo integerValue];
-    
-    NSMutableDictionary *sectionDict = nil;
-    if ( objc_getAssociatedObject(self, SectionDictKey) ) {
-        sectionDict = objc_getAssociatedObject(self, SectionDictKey);
-    }
-    else {
-        sectionDict = [[NSMutableDictionary alloc] init];
-        objc_setAssociatedObject(self, SectionDictKey, sectionDict, OBJC_ASSOCIATION_RETAIN);
-    }
-    
-    [sectionDict setObject:value forKey:[NSNumber numberWithInteger:section]];
-}*/
 -(id)data{
     return nil;
 }

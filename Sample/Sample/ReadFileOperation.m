@@ -25,12 +25,12 @@
     return operation;
 }
 -(void)main{
-    NSLog(@"Reading File: %@",[NSDate date]);
+    DDLogVerbose(@"Reading File: %@",[NSDate date]);
     self.state=OperationExecutingState;
     [NSThread sleepForTimeInterval:3.0];
     NSString *filePath = [[NSBundle mainBundle] pathForResource:self.filename ofType:@"json"];
     NSData *data = [NSData dataWithContentsOfFile:filePath];
     self.data=[NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
-    NSLog(@"Read File: %@",[NSDate date]);
+    DDLogVerbose(@"Read File: %@",[NSDate date]);
 }
 @end

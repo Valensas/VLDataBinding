@@ -14,4 +14,19 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #include "VLDataBinding.h"
+    #import "DDLog.h"
+#endif
+
+#if VL_LOG_LEVEL == ERROR
+static const int ddLogLevel = LOG_FLAG_ERROR;
+#elif VL_LOG_LEVEL == WARN
+static const int ddLogLevel = LOG_FLAG_WARN;
+#elif VL_LOG_LEVEL == INFO
+static const int ddLogLevel = LOG_FLAG_INFO;
+#elif VL_LOG_LEVEL == DEBUG
+static const int ddLogLevel = LOG_FLAG_DEBUG;
+#elif VL_LOG_LEVEL == VERBOSE
+static const int ddLogLevel = LOG_FLAG_VERBOSE;
+#else
+static const int ddLogLevel = LOG_LEVEL_OFF;
 #endif

@@ -1,8 +1,8 @@
 PODS:
-  - CocoaLumberjack (1.9.0):
+  - CocoaLumberjack (1.9.1):
     - CocoaLumberjack/Extensions
-  - CocoaLumberjack/Core (1.9.0)
-  - CocoaLumberjack/Extensions (1.9.0):
+  - CocoaLumberjack/Core (1.9.1)
+  - CocoaLumberjack/Extensions (1.9.1):
     - CocoaLumberjack/Core
   - DejalActivityView (1.2)
   - jastor (0.2.1)
@@ -15,7 +15,7 @@ DEPENDENCIES:
   - NSLogger
 
 SPEC CHECKSUMS:
-  CocoaLumberjack: 5766cdd1d0a24bcf15a133c6023747346bf786dd
+  CocoaLumberjack: 94accd5749f5c5d15134c8d50f34a973aed8ef69
   DejalActivityView: ef0970deefe891fefd57af27765ddb21a8265755
   jastor: 38c8cd3670b362123d824ee48a3056dca2037857
   NSLogger: c4df4b0208d724f244c05f1966b7402f14d7bf55
