@@ -70,7 +70,6 @@ static void *operationIsFinished = &operationIsFinished;
     if (context == operationIsFinished) {
         NSOperation *op=object;
         if(op.isFinished){
-            //[self removeActivityViewWithAnimation:NO];
             [self.operation removeObserver:self forKeyPath:@"state"];
             self.operation=nil;
             [self performSelectorOnMainThread:@selector(removeActivityViewWithAnimation:) withObject:[[NSNumber alloc] initWithBool:YES] waitUntilDone:YES];

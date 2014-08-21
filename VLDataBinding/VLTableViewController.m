@@ -34,27 +34,6 @@
                     cellReuseIdentifier=cell.reuseIdentifier;
                 }
                 [self.prototypeCells setObject:cell forKey:cellReuseIdentifier];
-                /*
-                id s=[cell valueForKey:@"selection"];
-                NSLog(@"s %@",s);
-                Class elem = [cell class];
-                while (elem) {
-                    NSLog(@"%s", class_getName( elem ));
-                    unsigned int numMethods = 0;
-                    Method *mList = class_copyMethodList(elem, &numMethods);
-                    if (mList) {
-                        for (int j=0; j < numMethods; j++) {
-                            NSLog(@"%s %s",class_getName( elem ),
-                                  sel_getName(method_getName(mList[j])));
-                        }
-                        free(mList);
-                    }
-                    if (elem == [NSObject class]) {
-                        break;
-                    }
-                    elem = class_getSuperclass(elem);
-                }*/
-                //DDLogVerbose(@"VLTableView register cell identifier:%@ index:%d-%d",cell.reuseIdentifier,[section intValue],i);
             }
         }
     }
@@ -107,7 +86,6 @@
             }
         }
     }
-    //DDLogVerbose(@"NumberOfRow:%d",(int)numOfRow);
     return numOfRow;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -172,15 +150,6 @@
         [self.view endEditing:YES];
         
     }
-    /*
-    if ([cell isKindOfClass:[VLTableViewCell class]]) {
-        VLTableViewCell *vlCell=(VLTableViewCell *)cell;
-        if (vlCell.segueIdentifier) {
-            if ([self shouldPerformSegueWithIdentifier:vlCell.segueIdentifier sender:cell]) {
-                [self  performSegueWithIdentifier:vlCell.segueIdentifier sender:cell];
-            }
-        }
-    }*/
     
 }
 -(UITextField *)textFieldOfParentView:(UIView *)parentView{
@@ -257,13 +226,7 @@
     return YES;
 }
 -(void)setTableData:(id)data{
-    _tableData=data;    
-    //if static table view
-    //    if (![self respondsToSelector:@selector(tableView:cellForRowAtIndexPath:)]) {
-    //        for ( UIView *subview in [self.tableView subviews] ) {
-    //            [subview bindWithObject:data];
-    //        }
-    //    }
+    _tableData=data;
     if ([data isKindOfClass:[NSArray class]]&&((self.sectionsKeyPath==nil)||(self.sectionsKeyPath.count==0))) {
         //This is dynamic simple 1 section table view
         self.sectionsKeyPath=[NSMutableDictionary dictionaryWithObject:@"self" forKey:[NSNumber numberWithInteger:0]];

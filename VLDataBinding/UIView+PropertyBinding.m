@@ -206,5 +206,23 @@ static NSString * const BindKey = @"bind";
 -(BOOL)isShown{
     return !self.isHidden;
 }
+-(BOOL)isOnView{
+    if(self.superview){
+        return true;
+    }else{
+        return false;
+    }
+}
+-(void)setOnView:(BOOL)onView{
+    if (!onView) {
+        [self removeFromSuperview];
+    }
+}
+-(BOOL)isNotOnView{
+    return !self.isOnView;
+}
+-(void)setNotOnView:(BOOL)notOnView{
+    self.onView=!notOnView;
+}
 
 @end

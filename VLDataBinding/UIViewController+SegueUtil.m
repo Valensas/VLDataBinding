@@ -84,6 +84,8 @@
     if ([segue.destinationViewController respondsToSelector:@selector(setData:)]) {
         if ([sender respondsToSelector:@selector(contentData)]) {
             [segue.destinationViewController setData:[sender contentData]];
+        }else if (([sender isKindOfClass:[UIView class]])&&([[sender layer] valueForKey:@"contentData"])){
+            [segue.destinationViewController setData:[[sender layer] valueForKey:@"contentData"]];
         }
     }
     if ([self respondsToSelector:prepareSegueSelector]) {
